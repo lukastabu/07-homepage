@@ -4,7 +4,7 @@
   "description": "this project is for educational purposes only. homopage design from: https://react.theme-land.com/theme-five",
   "main": "index.js",
   "scripts": {
-    "dev": "dead-server --port: 3001 -host:localhost"
+    "dev": "dead-server --port=3001 --host=localhost",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
