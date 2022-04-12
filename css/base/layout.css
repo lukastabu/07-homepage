@@ -1,0 +1,55 @@
+.container {
+    float: left;
+    width: 100%;
+    padding: 20px;
+}
+
+.container > .row {
+    float: left;
+    width: 100%;
+    background-color: antiquewhite;
+}
+
+.container > .row > .col-1 {
+    float: left;
+    width: calc(100%/12);
+    background-color: aqua;
+}
+
+.container > .row > .col-2 {
+    float: left;
+    width: calc(100%/6);
+    background-color: rgb(241, 158, 158);
+}
+
+@media (min-width: 576) {         /* kai ekranas bus butent toks, taikyt toki stylinga*/
+    .container > .row {
+        width: 540px;
+        background-color: pink;
+        margin: 0 calc(50% - 270px);
+    }
+}
+
+@media (min-width: 768px) {         /* kai ekranas bus butent toks, taikyt toki stylinga*/
+    .container > .row {
+        width: 720px;
+        background-color: lightskyblue;
+        margin: 0 calc(50% - 360px);
+    }
+}
+
+@media (min-width: 992px) {         /* kai ekranas bus butent toks, taikyt toki stylinga*/
+    .container > .row {
+        width: 960px;
+        background-color: lightgreen;
+        margin: 0 calc(50% - 480px);
+    }
+}
+
+@media (min-width: 1200px) {         /* kai ekranas bus butent toks, taikyt toki stylinga*/
+    .container > .row {
+        width: 1140px;
+        background-color: lightgray;
+        margin: 0 calc(50% - 570px);
+    }
+}
