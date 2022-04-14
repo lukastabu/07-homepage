@@ -28,3 +28,60 @@ body {
     background-color: var(--secondary-color);
     color: var(--secondary-color-anti);
 }
+
+p {
+    font-size: 16px;
+    color: rgb(129, 125, 125);
+}
+
+.bg-primary-color p,
+.bg-secondary-color p {
+    color: inherit;
+}
+
+.section-title {
+    position: relative;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.section-title::before {     /* pseudo elementas */
+    content: "";
+    display: inline-block;
+    background-color: var(--primary-color);
+    height: 2px;
+    width: 60px;
+    position: absolute;
+    bottom: -9px;
+    left: 0;
+}
+
+.section-title.no-line::before {     /* panaikintas pseudo elementas (kur jo nereik) */
+    display: none;
+}
+
+.section-title.title-center { /* sucentruoja centre*/
+    text-align: center;
+}
+
+.section-title.title-center::before { /* numeta i viduri ir pradzia paslenka per puse elemento plocio (gaunas paciam centre)*/
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.section-title.title-right { /* sucentruoja kairej*/
+    text-align: right;
+}
+
+.section-title.title-right::before {  /* sucentruoja pseudo elementa kairej */
+    left: unset;
+    right: 0;
+}
+
+.section-description {
+    margin-top: 20px;
+}
+
+.center {
+    text-align: center;
+}

@@ -1,0 +1,37 @@
+.btn {
+    display: inline-block;
+    padding: 1em 2em;
+    font-size: 16px;
+    line-height: 1.2em;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: var(--primary-color-anti);
+    border: none;
+    border-radius: 0.5em;
+}
+
+.btn.btn-sm {
+    font-size: 20px;
+}
+
+.btn.btn-md {
+    font-size: 25px;
+}
+
+.btn.btn-lg {
+    font-size: 30px;
+}
+
+/*  button size responsive to screen width
+.btn {
+    display: inline-block;
+    padding: 1em 2em;
+    font-size: calc(10px + 3vw);
+    line-height: 1.2em;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: var(--primary-color-anti);
+    border: none;
+    border-radius: 0.5em;
+}
+ */
