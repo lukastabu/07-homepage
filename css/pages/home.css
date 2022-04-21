@@ -9,5 +9,16 @@
 @import '../components/button.css';
 @import '../components/form.css';
 @import '../components/features.css';
+@import '../components/header.css';
 
 /* CUSTOM STYLE */
+
+
+
+/* hero starts here */
+.hero {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+/* hero ends here */ 
