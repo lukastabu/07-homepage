@@ -35,3 +35,16 @@
     border-radius: 0.5em;
 }
  */
+
+ .btn.btn-white {
+     background-color: #fff;
+     color: grey;
+ }
+
+ .btn.btn-round {
+     border-radius: 1.35em;
+ }
+
+ .btn:hover {
+     box-shadow: 10px 10px 5px 5px grey;
+ }
