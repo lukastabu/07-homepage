@@ -5,6 +5,12 @@
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1;
+}
+
+.main-header.white-header {
+    background-color: white;
+    box-shadow: 20px;
 }
 
 .main-header .col-12 {
@@ -20,4 +26,8 @@
 
 .main-header nav > a {
     color: white;
+}.
+
+.main-header.white-header nav > a {
+    color: black;
 }

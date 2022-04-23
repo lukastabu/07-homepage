@@ -1,3 +1,4 @@
+/* 
 function isValidSelevtor(params) {
     if (typeof selector !== 'string') {
         return [true, 'Selector turi buti stringas'];
@@ -24,3 +25,4 @@ if (!DOM) {
 
 export {renderFeatures};
 
+*/

@@ -10,6 +10,10 @@
     border-radius: 0.5em;
 }
 
+.btn:hover {
+    box-shadow: 0px 5px 5px 2px grey;
+}
+
 .btn.btn-sm {
     font-size: 20px;
 }
@@ -42,9 +46,6 @@
  }
 
  .btn.btn-round {
-     border-radius: 1.35em;
+     border-radius: 1.45em;
  }
 
- .btn:hover {
-     box-shadow: 10px 10px 5px 5px grey;
- }
