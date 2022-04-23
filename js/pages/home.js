@@ -1,11 +1,11 @@
 // component imports
 
-//import {renderfeatures} from '../components/features/features.js';
-
+import {renderFeatures} from '../components/features/features.js';
+import {featuresData} from '../data/featuresData.js';
 // components execution
 
 /* header: start */
-const mainHeaderDOM = document.querySelector('main-header')
+/*const mainHeaderDOM = document.querySelector('main-header')
 addEventListener('scroll', function() {
     const headerPosition = 100;
     if (scrollY > headerPosition) {
@@ -14,34 +14,23 @@ addEventListener('scroll', function() {
         mainHeaderDOM.classList.remove('white-header')
     }
 })
+*/
 /* header: end */
 
 /* hero: start */
-
-function labas() {
-    console.log('labaas');
-}
-
+/*
 const h1DOM = document.querySelector('h1');
 
 h1DOM.addEventListener('click', function(){
     console.log('iki');
 });
 h1DOM.addEventListener('click', labas);
-
+*/
 /* hero: end */
 
 /* premium features: start */
 
-/*
-let featuresData = [
-    {
-        icon: '',
-        title: '',
-        desciption: '',
-    }
-]
-*/
+renderFeatures('#features-block', featuresData);
 
 /* premium features: end */
 
