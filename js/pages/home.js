@@ -4,9 +4,27 @@ import {renderFeatures} from '../components/features/features.js';
 import {featuresData} from '../data/featuresData.js';
 // components execution
 
+/* pvz kaip veikia js eventai
+
+const h1DOM = document.querySelector('h1');
+
+function labas() {
+    console.log('labas');
+}
+h1DOM.addEventListener('click', labas);
+
+const h2DOM = document.querySelector('h2');
+
+h2DOM.addEventListener('click', function(){
+    console.log('iki');
+});
+
+
+*/
+
 /* header: start */
-/*const mainHeaderDOM = document.querySelector('main-header')
-addEventListener('scroll', function() {
+const mainHeaderDOM = document.querySelector('.main-header')
+window.addEventListener('scroll', function() {
     const headerPosition = 100;
     if (scrollY > headerPosition) {
         mainHeaderDOM.classList.add('white-header')
@@ -14,18 +32,10 @@ addEventListener('scroll', function() {
         mainHeaderDOM.classList.remove('white-header')
     }
 })
-*/
+
 /* header: end */
 
 /* hero: start */
-/*
-const h1DOM = document.querySelector('h1');
-
-h1DOM.addEventListener('click', function(){
-    console.log('iki');
-});
-h1DOM.addEventListener('click', labas);
-*/
 /* hero: end */
 
 /* premium features: start */

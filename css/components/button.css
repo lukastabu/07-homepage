@@ -45,6 +45,11 @@
      color: grey;
  }
 
+ .btn.btn-white:hover {
+    color: var(--primary-color);
+    background-color: var(--primary-color-anti);
+ }
+
  .btn.btn-round {
      border-radius: 1.45em;
  }

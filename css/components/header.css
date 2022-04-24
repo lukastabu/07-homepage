@@ -10,13 +10,28 @@
 
 .main-header.white-header {
     background-color: white;
-    box-shadow: 20px;
+    box-shadow: 0 10px 20px gray;
+}
+
+.main-header .row {
+    margin-top: 10px;
 }
 
 .main-header .col-12 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.main-header .logo > .color {
+    display: none;
+}
+
+.main-header.white-header .logo > .white {
+    display: none;
+}
+.main-header.white-header .logo > .color {
+    display: block;
 }
 
 .main-header nav {
@@ -26,7 +41,7 @@
 
 .main-header nav > a {
     color: white;
-}.
+}
 
 .main-header.white-header nav > a {
     color: black;
