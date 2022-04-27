@@ -21,3 +21,22 @@
 .feature > .description {
 
 }
+
+.features-list.row {
+    display: grid;
+    gap: 20px;
+    align-items: start;
+}
+
+@media(min-width: 805px){
+    .features-list.row{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(min-width: 1050px){
+    .features-list.row{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+

@@ -6,7 +6,7 @@ let featuresData = [
     },
     {
         icon: 'phone',
-        title: 'Live Chat',
+        title: 'Live Chat Live Chat Live Chat Live Chat Live Chat Live Chat',
         description: 'good feature, veery good',
     },
     {

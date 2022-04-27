@@ -1,0 +1,70 @@
+.carousel {
+    display: grid;
+    gap: 10px;
+}
+
+.carousel > .list-view {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel > .list-view > .list {
+    width: calc(8 / 3 * 100%);
+    display: flex;
+    transition: all 2s;
+    transform: translateX(-37.5%);
+}
+
+.carousel .list > .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid lightpink;
+    width: calc(100% / 8);
+    height: 150px;
+    font-size: 40px;
+}
+
+.carousel .actions {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel .actions > .angle-icon {
+    padding: 5px 20px;
+    font-size: 30px;
+    gap: 50px;
+    cursor: pointer;
+}
+
+.carousel .actions > .angle-icon:hover {
+    color: blueviolet;
+}
+
+.carousel > .actions > .dots {
+    font-size: 15px;
+    display: flex;
+    gap: 20px;
+}
+
+.carousel .dots > .dot {
+    width: 10px;
+    height: 10px;
+    background-color: grey;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.carousel .dots > .dot.active {
+    background-color: blueviolet;
+    transform: scale(1.4);
+/* gali buti ir taip, tada nereikia scale
+    box-shadow: 0 0 0 2px blueviolet;
+*/
+}
+
+.carousel .dots > .dot:hover {
+    background-color: blueviolet;
+}
