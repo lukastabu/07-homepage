@@ -1,7 +1,5 @@
 .feature {
     padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
     text-align: center;
     box-shadow: 0px 5px 10px gray;
     border-radius: 20px;
@@ -18,23 +16,19 @@
     font-size: 22px;
 }
 
-.feature > .description {
-
-}
-
 .features-list.row {
     display: grid;
     gap: 20px;
     align-items: start;
 }
 
-@media(min-width: 805px){
-    .features-list.row{
+@media (min-width: 805px) {
+    .features-list.row {
         grid-template-columns: 1fr 1fr;
     }
 }
 
-@media(min-width: 1050px){
+@media (min-width: 1050px) {
     .features-list.row{
         grid-template-columns: 1fr 1fr 1fr;
     }
