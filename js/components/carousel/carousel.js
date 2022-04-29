@@ -4,6 +4,7 @@ class Carousel {
         this.cardClass=cardClass;
         this.data=data;
         this.settings=settings;
+        this.carouselDOM = null;
 
         this.size = {
             mobile: 1;
@@ -15,18 +16,35 @@ class Carousel {
 
         this.init();
     }
+
     init() {
         if (!this.isValidSelector()) {
-            return [true, 'neteisingas selector'
+            return [true, 'neteisingas selector']
         };
 
         if (!this.validData()) {
             return[true, 'neteisingi duomenys ']
         };
-        
+                
         if (!this.findTargetElement()) {
             return[true, 'nerastas norimas elementas ']
         };
+
+        this.render();
+    }
+
+    isValidSelector(){
+        return true;
+    }
+
+    isValidData(){
+        return true;
+    }
+
+    findTargetElement() {
+        this.carouselDOM = document.querySelector(this.selector);
+        return !!this.carouselDOM;
+    }
 
         this.updateDefaultSettings() {
             if (typeof this.settings !== 'object'
@@ -37,11 +55,34 @@ class Carousel {
             return true;
         }
 
-        this.render();
-    }
+        
+    
 
     listHTML() {
-        return `
+        let HTML = "";
+        let copyCount = 0;
+        for (const key in this.size){
+            if (copyCount < this.size[key]) {
+                copyCount = this.size[key];
+            }      
+        }
+
+
+        const list = [
+            ...this.data.list.slice(-this.size.desktop),
+            ...this.data.list,
+            ...this.data.list.slice(0, this.size.desktop),
+        ];
+
+        for (let item of list = 0) {
+            HTML += `<div class="item">3</div> `;
+        }
+
+        const width = list.length / this.size.desktop * 100%;
+        const trans = 100 / list.length'
+        return `<div class="list-view">
+                    <div class="list" style="transform: translateX(-${trans}%); width: ${width}%">${HTML}</div>
+                </div>
         
         `
     }
@@ -53,8 +94,30 @@ class Carousel {
     }
 
     render(){
-        // this.carouselDOM.innerHTML = this.listHTML() + this.actionsHTML();
-        const HTML = this.listHTML() + this.actionsHTML();
-        this.HTML = 
+        let HTML = 
+        `<div class="list-view">
+            <div class="list">
+                <div class="item">3</div>
+                <div class="item">4</div>
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+                <div class="item">1</div>
+                <div class="item">2</div>
+            </div>
+        </div>
+        <div class="actions">
+            <i class="angle-icon fa fa-angle-left"></i>
+            <div class="dots">
+                <i class="dot active"></i>
+                <i class="dot"></i>
+                <i class="dot"></i>
+            </div>
+            <i class="angle-icon fa fa-angle-right"></i>
+        </div>`,
+        this.carouselDOM.innerHTML = HTML;
     }
 }
+
+export {Carousel}

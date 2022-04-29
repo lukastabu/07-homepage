@@ -1,8 +1,12 @@
 // component imports
 
+import {Carousel} from '../components/carousel.js';
 import {renderFeatures} from '../components/features/features.js';
 import {featuresData} from '../data/featuresData.js';
-//import { interfaceData } from '../data/interfaceData.js';
+import {heroForm} from '../components/form/heroForm.js';
+import { interfaceCard } from '../components/carousel/interface.js';
+import { testimonialCard } from '../components/carousel/testimonial.js';
+import { interfaceData } from '../data/interfaceData.js';
 // components execution
 
 /* pvz kaip veikia js eventai
@@ -55,17 +59,18 @@ renderFeatures('#features-block', featuresData);
 /* how app works: end */
 
 /* interface slide: start */
-/*
-const interfaceCarousel = new Carousel("#interface-carousel", interfaceCard, interfaceData, {
+
+const interfaceCarousel = new Carousel('interface-carousel', interfaceCard , interfaceData, {
     size: {
-        mobile: 1;
-        tablet: 2;
-        desktop: 3;
+        mobile: 1,
+        tablet: 2,
+        desktop: 3,
     },
     previousNext: true,
     dots: true,
 });
-*/
+
+
 /* interface slide: end */
 
 /* testimonials: start */
