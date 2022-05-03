@@ -1,6 +1,6 @@
 // component imports
 
-import {Carousel} from '../components/carousel.js';
+import {Carousel} from '../components/carousel/Carousel.js';
 import {renderFeatures} from '../components/features/features.js';
 import {featuresData} from '../data/featuresData.js';
 import {heroForm} from '../components/form/heroForm.js';
@@ -60,7 +60,7 @@ renderFeatures('#features-block', featuresData);
 
 /* interface slide: start */
 
-const interfaceCarousel = new Carousel('interface-carousel', interfaceCard , interfaceData, {
+const interfaceCarousel = new Carousel('#interface-carousel', interfaceCard , interfaceData, {
     size: {
         mobile: 1,
         tablet: 2,
@@ -70,6 +70,7 @@ const interfaceCarousel = new Carousel('interface-carousel', interfaceCard , int
     dots: true,
 });
 
+console.log(interfaceCarousel);
 
 /* interface slide: end */
 

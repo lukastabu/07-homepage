@@ -1,4 +1,4 @@
-let interfaceData = {
+const interfaceData = {
   srcFolder: "./img/interface/",
   list: [
     {
@@ -24,4 +24,4 @@ let interfaceData = {
   ],
 };
 
-export { interfaceData };
+export { interfaceData }
