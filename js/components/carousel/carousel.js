@@ -22,7 +22,7 @@ class Carousel {
             return [true, 'neteisingas selector'];
         }
 
-        if (!this.validData()) {
+        if (!this.isValidData()) {
             return[true, 'neteisingi duomenys '];
         }
                 
@@ -30,7 +30,8 @@ class Carousel {
             return[true, 'nerastas norimas elementas '];
         }
 
-        this.updateDefaultSettings();
+/*        this.updateDefaultSettings();
+*/
         this.render();
     }
 

@@ -41,6 +41,7 @@ window.addEventListener('scroll', function() {
 /* header: end */
 
 /* hero: start */
+heroForm();
 /* hero: end */
 
 /* premium features: start */
@@ -70,7 +71,7 @@ const interfaceCarousel = new Carousel('#interface-carousel', interfaceCard , in
     dots: true,
 });
 
-console.log(interfaceCarousel);
+//console.log(interfaceCarousel);
 
 /* interface slide: end */
 

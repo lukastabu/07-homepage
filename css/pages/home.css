@@ -21,11 +21,15 @@
 .hero {
     display: flex;
     align-items: center;
-    min-height: 100vh;
 }
 
 .hero .hero-form {
-    
+    display: grid;
+    gap: 20px;
+    padding: 30px;
+    border-radius: 11px;
+    background-color: white;
+    color: black;
 }
 
 /* hero ends here */ 

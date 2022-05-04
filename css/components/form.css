@@ -1,18 +1,27 @@
-.form {
+form {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.form > label {
+form > label {
     display: none;
 }
 
-.form > textarea {
+form > textarea,
+form > input {
+    width: 100%;
     font-size: 20px;
-    padding: 5px;
-    resize: vertical;
     line-height: 20px;
+    padding: 0.2em 1em;
+}
+
+textarea {
+    resize: vertical;
     min-height: 100px;
     max-height: 360px;
+}
+
+::placeholder {
+    color: violet;
 }
